@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于世界杯 – h5-china-shijiebei.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f7f5f2;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #1f1e1c;
+            line-height: 1.7;
+        }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 64px 24px 80px;
+        }
+
+        /* hero */
+        .hero {
+            text-align: center;
+            padding: 60px 0 40px;
+            border-bottom: 1px solid #e4e1db;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            color: #1e1c1a;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #5b5854;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        /* 通用 section */
+        section {
+            padding: 40px 0;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+            color: #1f1e1c;
+            letter-spacing: -0.01em;
+        }
+
+        .section-sub {
+            color: #5b5854;
+            margin-bottom: 24px;
+            font-size: 1rem;
+        }
+
+        /* 优势卡片 */
+        .advantages {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .adv-item {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 16px 20px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+        }
+
+        .adv-icon {
+            width: 40px;
+            height: 40px;
+            background: #eae6df;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            flex-shrink: 0;
+        }
+
+        .adv-content h3 {
+            font-size: 1.05rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+            color: #1f1e1c;
+        }
+
+        .adv-content p {
+            color: #5b5854;
+            font-size: 0.95rem;
+        }
+
+        /* 说明区 */
+        .explain-box {
+            background: #fff;
+            padding: 28px 24px;
+            border-radius: 16px;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.03);
+        }
+
+        .explain-box p {
+            margin-bottom: 18px;
+            color: #3b3a37;
+        }
+
+        .explain-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .inline-link {
+            color: #2563eb;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            font-weight: 500;
+        }
+
+        .inline-link:hover {
+            color: #1d4ed8;
+        }
+
+        /* FAQ 摘要 */
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #ece9e3;
+            padding-bottom: 18px;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-q {
+            font-weight: 500;
+            margin-bottom: 6px;
+            color: #1f1e1c;
+        }
+
+        .faq-a {
+            color: #5b5854;
+            font-size: 0.95rem;
+        }
+
+        /* 底部 */
+        .footer-links {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #e4e1db;
+            text-align: center;
+        }
+
+        .footer-links a {
+            color: #5b5854;
+            text-decoration: none;
+            margin: 0 12px;
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            color: #1f1e1c;
+            text-decoration: underline;
+        }
+
+        .footer-note {
+            margin-top: 24px;
+            font-size: 0.85rem;
+            color: #8a8680;
+        }
+
+        /* 响应式 */
+        @media (max-width: 520px) {
+            .page {
+                padding: 32px 16px 60px;
+            }
+
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .adv-item {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 16px;
+            }
+
+            .explain-box {
+                padding: 20px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- hero -->
+        <div class="hero">
+            <h1>世界杯 · 中国视角</h1>
+            <p>一个让你快速定位世界杯资讯、赛程与文化的轻量页面，不绕弯子。</p>
+        </div>
+
+        <!-- 优势区 -->
+        <section>
+            <h2 class="section-title">为什么选择这里</h2>
+            <div class="advantages">
+                <div class="adv-item">
+                    <div class="adv-icon">📋</div>
+                    <div class="adv-content">
+                        <h3>赛程一眼看清</h3>
+                        <p>小组赛、淘汰赛、决赛时间与对阵，不用翻遍社交媒体。</p>
+                    </div>
+                </div>
+                <div class="adv-item">
+                    <div class="adv-icon">🏟️</div>
+                    <div class="adv-content">
+                        <h3>文化看点</h3>
+                        <p>每届世界杯背后的主办国故事、球衣演变与经典瞬间，值得回味。</p>
+                    </div>
+                </div>
+                <div class="adv-item">
+                    <div class="adv-icon">📱</div>
+                    <div class="adv-content">
+                        <h3>适配移动端</h3>
+                        <p>页面在手机和电脑上都保持干净排版，浏览体验舒适。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 说明区 -->
+        <section>
+            <h2 class="section-title">这个页面在做什么</h2>
+            <div class="explain-box">
+                <p>如果你正在找关于 <a href="https://h5-china-shijiebei.com" class="inline-link">世界杯</a> 的聚合信息，但又不想被各种弹窗和广告干扰，那么这里可能对你有用。本站聚焦于赛事基础知识、历史趣味与实用链接，不堆砌冗余内容。</p>
+                <p>每个足球迷都有自己关注的角度：有人偏爱预测分析，有人只想看赛程，还有人希望了解东道主文化。这个页面尝试把这些零散信息整合成几个清晰的板块，减少你的搜索时间。</p>
+                <p>目前内容还在逐步补充中，如果你有想了解的特定话题，也可以留意后续更新。</p>
+            </div>
+        </section>
+
+        <!-- FAQ 摘要 -->
+        <section>
+            <h2 class="section-title">常见问题（摘要）</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-q">这个网站会实时更新比赛结果吗？</div>
+                    <div class="faq-a">目前的版本偏向静态信息聚合，比赛结果会通过文章形式定期同步。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">为什么用中文展示？</div>
+                    <div class="faq-a">主要服务中文用户，让阅读更直接，不需要额外翻译。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">内容来源可靠吗？</div>
+                    <div class="faq-a">所有信息均参考公开赛事资料与官方渠道，尽力确保准确。</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 底部 -->
+        <div class="footer-links">
+            <a href="https://h5-china-shijiebei.com">世界杯</a>
+            <a href="#">关于本站</a>
+            <a href="#">反馈</a>
+            <div class="footer-note">
+                保持简单 · 专注内容
+            </div>
+        </div>
+    </div>
+</body>
+</html>
